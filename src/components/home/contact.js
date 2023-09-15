@@ -8,7 +8,7 @@ const Contact = () => {
                     <form >
                         <div className='contact-wrapper'>
                             <div className="newsletter">
-                                <p style={{ fontSize: '26px', fontWeight: '600' }}>Newslleter</p>
+                                <p style={{ fontSize: '26px', fontWeight: '600' }}>Newsletter</p>
                                 <p style={{ fontSize: '18px', fontWeight: '400' }}>Get news about articles and updates in your inbox</p>
                             </div>
                             <div className="form">
