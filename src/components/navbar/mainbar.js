@@ -12,6 +12,7 @@ const Mainbar = ({ categories }) => {
     const navigate = useNavigate()
     function filter(category) {
         navigate({ pathname: '/', search: `?category=${category}` })
+        toggler()
     }
     return (
         <div className="container">
@@ -24,8 +25,8 @@ const Mainbar = ({ categories }) => {
                 </div>
                 <div className={`custom-nav dropdown-hide ${toggle && 'dropdown-show'}`} id='custom-nav' >
 
-                    <div><a href="#">HOME</a></div>
-                    <div><a href="#">ABOUT</a></div>
+                    <div><a onClick={toggler} href="#">HOME</a></div>
+                    <div><a onClick={toggler} href="#">ABOUT</a></div>
 
                     <div class="dropdown">
 
@@ -36,7 +37,7 @@ const Mainbar = ({ categories }) => {
                             })}
                         </ul>
                     </div>
-                    <div><a href="#contact">CONTACT US</a></div>
+                    <div><a onClick={toggler} href="#contact">CONTACT US</a></div>
 
                 </div>
             </div>

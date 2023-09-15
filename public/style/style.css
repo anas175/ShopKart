@@ -639,4 +639,9 @@ textarea:focus {
     .nav-list {
         text-align: center;
     }
+
+    .see-more-btn {
+        top: auto;
+    }
+
 }
